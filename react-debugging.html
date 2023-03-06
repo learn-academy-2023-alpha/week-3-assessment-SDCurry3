@@ -65,11 +65,12 @@
         // No need to change anything ABOVE this line ^
 
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -81,9 +82,9 @@
               )
             })}
           </div>
-        )
+        </>)    // no JSX fragments here or on line 68
       }
-
+// Added the drawCard function statement to line 70, and Capitalized the C in onclick on line 73
       // No need to change anything below this line
 
       const domContainer = document.querySelector('#react-container')
